@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- fons lila clar i lletres fosques, gruixudes i estirades a tot l'ample perquè es llegeixin a 16 px -->
+  <rect width="64" height="64" rx="12" fill="#f1e6ff"/>
+  <text x="32" y="45" text-anchor="middle" textLength="60" lengthAdjust="spacingAndGlyphs"
+        font-family="Verdana, 'Trebuchet MS', Arial, sans-serif" font-weight="700" font-size="36" fill="#2b2733">OBG</text>
+</svg>

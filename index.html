@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ona Jie Bonet Garcia · Portfoli</title>
+  <meta name="description" content="Portfoli d'enginyeria industrial: cadena de subministrament, operacions, qualitat i anàlisi de dades.">
+  <!-- Els enllaços per oferta (?e=...) no han de sortir a Google. Treu aquesta línia si vols que el portfoli s'indexi. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Icona de la pestanya -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#d2b8ec">
+
+  <!-- Vista prèvia en compartir l'enllaç (LinkedIn, WhatsApp, correu...). En anglès.
+       La imatge ha d'anar amb l'adreça completa; si canvies el nom del repositori, canvia-la també. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ona Jie Bonet Garcia · Portfolio">
+  <meta property="og:title" content="Ona Jie Bonet Garcia · Industrial engineer">
+  <meta property="og:description" content="Engineering portfolio: supply chain, operations, quality and data analysis. Projects, experience and skills.">
+  <meta property="og:url" content="https://onabonetgarcia.github.io/portfoli/">
+  <meta property="og:image" content="https://onabonetgarcia.github.io/portfoli/assets/og.png?v=3">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OBG">
+  <meta property="og:locale" content="en_GB">
+  <meta name="author" content="Ona Jie Bonet Garcia">
+  <meta property="article:author" content="Ona Jie Bonet Garcia">
+  <meta property="article:published_time" content="2026-11-21T00:00:00+01:00">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="style.css?v=264">
+</head>
+<body>
+  <a class="skip" href="#projectes" data-i18n="skip"></a>
+
+  <!-- Barra superior: nom, pestanyes i idioma -->
+  <header class="topbar" id="topbar">
+    <div class="tb-inner">
+      <a class="tb-id" href="#inici">
+        <span class="tb-name" id="tb-name"></span>
+        <span class="tb-title" id="tb-title"></span>
+      </a>
+      <nav class="tabs" id="tabs" aria-label="Seccions"></nav>
+      <div class="lang" id="lang" role="group" aria-label="Idioma / Language"></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= INICI ================= -->
+    <section class="view" id="inici" data-tab="inici">
+      <!-- Portada: el nom gran s'encongeix en baixar i apareix la resta (opció B: a més, es dibuixa com un plànol) -->
+      <div class="hero" id="hero">
+        <div class="stage">
+          <div class="hero-bg" aria-hidden="true">
+            <svg viewBox="0 0 1440 800" preserveAspectRatio="none" focusable="false">
+<defs>
+  <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2d2f5"/><stop offset=".38" stop-color="#d2b8ec"/><stop offset=".68" stop-color="#e8d6f2"/><stop offset="1" stop-color="#cdb4ec"/></linearGradient>
+  <radialGradient id="hr" cx=".42" cy=".62" r=".5"><stop offset="0" stop-color="#f7e6f7"/><stop offset="1" stop-color="#f7e6f7" stop-opacity="0"/></radialGradient>
+  <clipPath id="hc"><path d="M0,0H1440V800H0Z"/></clipPath>
+</defs>
+<g clip-path="url(#hc)">
+  <rect width="1440" height="800" fill="url(#hg)"/>
+  <rect width="1440" height="800" fill="url(#hr)"/>
+  <path fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.45)" stroke-width="1.5" d="M-20,520C180,380 380,360 560,470S900,640 1120,500S1380,300 1460,360V800H-20Z"/>
+  <path fill="rgba(170,130,220,.16)" stroke="rgba(255,255,255,.35)" stroke-width="1.2" d="M-20,300C200,220 420,300 600,200S940,40 1140,160S1380,330 1460,260V800H-20Z"/>
+  <path fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.3" d="M300,0C240,200 380,360 560,420S860,520 800,800"/>
+  <path fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2" d="M900,0C960,160 1120,220 1300,200S1440,260 1460,300"/>
+</g>
+            </svg>
+          </div>
+          <div class="frame" id="frame">
+            <span class="corner c1" aria-hidden="true"></span><span class="corner c2" aria-hidden="true"></span>
+            <span class="corner c3" aria-hidden="true"></span><span class="corner c4" aria-hidden="true"></span>
+            <p class="eyebrow" id="greeting" hidden></p>
+            <p class="mono-tag" id="hero-tag"></p>
+            <div class="namebox">
+              <span class="dim dim-h" aria-hidden="true"><i></i></span>
+              <span class="dim dim-v" aria-hidden="true"><i></i></span>
+              <h1 id="name"></h1>
+            </div>
+            <p class="hero-title" id="title"></p>
+            <div class="later">
+              <div class="hero-loc-wrap"><span class="hero-loc" id="hero-loc"></span></div>
+              <p class="tagline" id="tagline"></p>
+              <ul class="contact" id="contact"></ul>
+            </div>
+          </div>
+          <dl class="spec later" id="stats"></dl>
+        </div>
+        <a class="scroll-hint" href="#sobre-mi" data-i18n-aria="toAbout">↓</a>
+      </div>
+
+      <div class="wrap">
+        <div class="block" id="sobre-mi">
+          <p class="sec-label" data-i18n="about"></p>
+          <p class="lead" id="about-text"></p>
+        </div>
+        <div class="block">
+          <p class="sec-label"><a href="#projectes" class="feat-link" id="feat-link" data-i18n="featured"></a></p>
+          <div class="feat-wrap">
+            <div class="featured" id="featured"></div>
+            <!-- només en mòbil (carrusel): fletxes i punts -->
+            <button type="button" class="fw-btn prev" id="feat-prev" aria-label="Anterior">‹</button>
+            <button type="button" class="fw-btn next" id="feat-next" aria-label="Següent">›</button>
+          </div>
+          <div class="feat-dots" id="feat-dots"></div>
+        </div>
+        <div class="block">
+          <p class="sec-label" data-i18n="explore"></p>
+          <div class="explore" id="explore"></div>
+        </div>
+        <div class="block">
+          <p class="sec-label" data-i18n="others"></p>
+          <ul class="others" id="others"></ul>
+        </div>
+        <div class="block" id="interests-block" hidden>
+          <p class="sec-label" data-i18n="interests"></p>
+          <ul class="interests" id="interests"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIÈNCIA ⇄ FORMACIÓ =================
+         Una sola línia temporal, ordenada per data.
+         Experiència: la línia és a la dreta i les experiències surten cap a l'esquerra (la formació, apagada a l'altre costat).
+         Formació: la línia llisca a l'esquerra i la formació surt cap a la dreta. -->
+    <section class="view wrap wide" id="trajectoria" data-tab="experiencia formacio" hidden>
+      <div class="ct-head">
+        <a class="ct-tab" href="#experiencia" data-m="exp"><span class="n">02</span><span data-i18n="experience"></span></a>
+        <a class="ct-tab" href="#formacio" data-m="edu"><span class="n">03</span><span data-i18n="education"></span></a>
+      </div>
+      <p class="ct-intro" id="ct-intro"></p>
+      <ol class="ct mode-exp" id="ct"></ol>
+    </section>
+
+    <!-- ================= PROJECTES ================= -->
+    <section class="view wrap wide" id="projectes" data-tab="projectes" hidden>
+      <div class="ct-head"><h2 class="pt"><span class="n">04</span><span data-i18n="projects"></span></h2></div>
+      <p class="note" data-i18n="footer"></p>
+      <div class="panel" id="pf-panel">
+        <p class="label" data-i18n="viewFor"></p>
+        <!-- només en mòbil: desplegable amb el perfil triat -->
+        <button type="button" class="pf-toggle" id="pf-toggle" aria-expanded="false"><span id="pf-toggle-txt"></span><span aria-hidden="true">▾</span></button>
+        <div class="chips" id="profile-chips" role="group"></div>
+        <p class="headline" id="headline"></p>
+        <ul class="keywords" id="keywords"></ul>
+      </div>
+      <div class="filters" id="filters">
+        <!-- Només en mòbil: plega i desplega les files de nivell, any i tipus -->
+        <button type="button" class="ftoggle" id="f-toggle" aria-expanded="false"><span class="ft-ic" aria-hidden="true">☰</span><span id="f-toggle-txt"></span><b class="fbadge" id="f-badge" hidden></b><span class="ft-arrow" aria-hidden="true">▾</span></button>
+        <div class="frow"><span class="flabel" data-i18n="fLevel"></span><div class="chips small" id="f-level" role="group"></div></div>
+        <div class="frow"><span class="flabel" data-i18n="fYear"></span><div class="chips small" id="f-year" role="group"></div></div>
+        <div class="frow"><span class="flabel" data-i18n="fType"></span><div class="chips small" id="f-team" role="group"></div></div>
+        <div class="frow fbar">
+          <span class="count-wrap"><span class="count" id="count" aria-live="polite"></span><button type="button" class="fav-chip" id="f-fav" aria-pressed="false"><span class="mini-star">★</span><span></span></button></span>
+          <span class="fbar-r">
+            <span class="seg" id="view-mode" role="group"></span>
+            <button type="button" class="clear" id="clear"></button>
+          </span>
+        </div>
+      </div>
+
+      <!-- Prestatgeria -->
+      <div class="shelf-wrap" id="shelf-wrap">
+        <div class="shelf" id="shelf"></div>
+        <div class="preview" id="preview" hidden aria-hidden="true"></div>
+      </div>
+      <div class="legend" id="legend"></div>
+      <!-- Llista -->
+      <div id="projects" class="rows" hidden></div>
+      <p class="empty" id="empty" hidden data-i18n="empty"></p>
+    </section>
+
+    <!-- ================= COMPETÈNCIES I IDIOMES ================= -->
+    <section class="view wrap" id="competencies" data-tab="competencies" hidden>
+      <div class="ct-head"><h2 class="pt"><span class="n">05</span><span data-i18n="skills"></span></h2></div>
+      <div class="skills" id="skills-list"></div>
+      <p class="sec-label gap" data-i18n="languages"></p>
+      <div class="langs" id="lang-list"></div>
+      <ul class="badges" id="badges"></ul>
+    </section>
+  </main>
+
+  <!-- Peu de pàgina: contacte i CV a totes les pestanyes -->
+  <footer class="site-foot" id="site-foot">
+    <div class="wrap">
+      <p class="sec-label"><span data-i18n="contact"></span></p>
+      <ul class="contact" id="contact-foot"></ul>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Llibre obert -->
+  <dialog id="book" class="book-dlg" aria-labelledby="book-title">
+    <div class="book-top">
+      <span class="book-pos" id="book-pos"></span>
+      <button type="button" id="book-close" class="deck-btn" data-i18n-aria="close">✕</button>
+    </div>
+    <div class="book" id="book-el">
+      <div class="page left" id="page-left"></div>
+      <div class="page right" id="page-right"></div>
+      <div class="flipper" id="flipper" aria-hidden="true"></div>
+    </div>
+    <div class="book-nav">
+      <div class="pile" id="pile-l" aria-label="Projectes anteriors"></div>
+      <button type="button" class="deck-btn" id="book-prev" data-i18n-aria="prevBook">←</button>
+      <span class="book-count" id="book-count" aria-live="polite"></span>
+      <button type="button" class="deck-btn" id="book-next" data-i18n-aria="nextBook">→</button>
+      <div class="pile" id="pile-r" aria-label="Projectes següents"></div>
+    </div>
+  </dialog>
+
+  <script src="data.js?v=76"></script>
+  <script src="assets/data/iiot-real.js?v=1"></script>
+  <script src="assets/data/st-data.js?v=1"></script>
+  <script src="app.js?v=203"></script>
+</body>
+</html>
